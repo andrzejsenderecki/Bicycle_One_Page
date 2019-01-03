@@ -4,9 +4,9 @@
 
 Link do projektu:
 
-https://andrzejsenderecki.github.io/Take_One_Page/
+https://andrzejsenderecki.github.io/Bicycle_One_Page/
 
-<h2>Strona w budownie</h2>
+<h1>Strona w budownie</h1>
 
 Strona została wykonana na podstawie gotowego projektu graficznego wykonanego w programie Photoshop. 
 
