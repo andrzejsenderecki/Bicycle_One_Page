@@ -1,0 +1,133 @@
+.work-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.work-section {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.work-section-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-section-box-first-bg, .work-section-box-second-bg {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-section-box-first-bg {
+    background-image: url('images/bicycle_handlebar.jpg');
+}
+
+.work-section-box-second-bg {
+    background-image: url('images/bicycle_all_1.jpg');
+}
+
+.work-section-box-third-left-bg, .work-section-box-third-right-bg {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-section-box-third-left-bg {
+    background-image: url('images/bicycle_crossbar.jpg');
+}
+
+.work-section-box-third-right-bg {
+    background-image: url('images/bicycle_all_2.jpg');
+}
+
+.work-section-box-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 100px;
+
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.7rem;
+        color: #4d4959;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    p {
+        position: relative;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #848789;
+        line-height: 3rem;
+        padding: 0 50px 100px 50px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            text-align: center;
+            left: 48%;
+            bottom: -10px;
+            width: 20px;
+            height: 20px;
+            background: #FFFFFF;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.work-section-box-article-bg {
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+
+    .work-section-box {
+        flex-direction: row;
+    }
+
+    .work-section-box-first-bg {
+        width: 70%;
+        height: auto;
+    }
+
+    .work-section-box-second-bg {
+        width: 70%;
+        height: auto;
+    }
+
+    .work-section-box-article {
+        width: 30%;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .work-section-box-article-down {
+        width: 40%;
+    }
+
+    .work-section-box-third-left-bg {
+        width: 30%;
+        height: auto;
+    }
+
+    .work-section-box-third-right-bg {
+        width: 30%;
+        height: auto;
+    }
+}

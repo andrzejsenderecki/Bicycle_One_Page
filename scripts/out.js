@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_aboutUsSection.scss":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_aboutUsSection.scss ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".title-section-container {\\n  width: 100%;\\n  background: #f7f7f7;\\n  display: flex;\\n  justify-content: center; }\\n\\n.title-section {\\n  width: 70%;\\n  max-width: 1200px;\\n  padding: 100px 0 100px 0;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center; }\\n  .title-section h1 {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 2rem;\\n    color: #4d4959;\\n    text-transform: uppercase;\\n    text-align: center;\\n    padding: 20px 0 20px 0; }\\n  .title-section p {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 1.7rem;\\n    color: #848789;\\n    text-align: center;\\n    line-height: 3rem; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./scss/partials/_aboutUsSection.scss?./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_header.scss":
 /*!*****************************************************************************************************************!*\
   !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_header.scss ***!
@@ -108,14 +119,14 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_titleSection.scss":
-/*!***********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_titleSection.scss ***!
-  \***********************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_workSection.scss":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_workSection.scss ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".title-section-container {\\n  width: 100%;\\n  background: #f7f7f7;\\n  display: flex;\\n  justify-content: center; }\\n\\n.title-section {\\n  width: 70%;\\n  max-width: 1200px;\\n  padding: 100px 0 100px 0;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center; }\\n  .title-section h1 {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 2rem;\\n    color: #4d4959;\\n    text-transform: uppercase;\\n    text-align: center;\\n    padding: 20px 0 20px 0; }\\n  .title-section p {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 1.7rem;\\n    color: #848789;\\n    text-align: center;\\n    line-height: 3rem; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./scss/partials/_titleSection.scss?./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".work-section-container {\\n  width: 100%;\\n  display: flex;\\n  justify-content: center; }\\n\\n.work-section {\\n  width: 100%;\\n  max-width: 1600px; }\\n\\n.work-section-box {\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column; }\\n\\n.work-section-box-first-bg, .work-section-box-second-bg {\\n  width: 100%;\\n  height: 600px;\\n  background-size: cover;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center; }\\n\\n.work-section-box-first-bg {\\n  background-image: url(\\\"images/bicycle_handlebar.jpg\\\"); }\\n\\n.work-section-box-second-bg {\\n  background-image: url(\\\"images/bicycle_all_1.jpg\\\"); }\\n\\n.work-section-box-third-left-bg, .work-section-box-third-right-bg {\\n  width: 100%;\\n  height: 600px;\\n  background-size: cover;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center; }\\n\\n.work-section-box-third-left-bg {\\n  background-image: url(\\\"images/bicycle_crossbar.jpg\\\"); }\\n\\n.work-section-box-third-right-bg {\\n  background-image: url(\\\"images/bicycle_all_2.jpg\\\"); }\\n\\n.work-section-box-article {\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: flex-end;\\n  align-items: center;\\n  padding-top: 100px; }\\n  .work-section-box-article h2 {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 1.7rem;\\n    color: #4d4959;\\n    text-transform: uppercase;\\n    text-align: center;\\n    padding: 20px 0 20px 0; }\\n  .work-section-box-article p {\\n    position: relative;\\n    font-family: 'Lato', sans-serif;\\n    font-size: 1.5rem;\\n    text-align: center;\\n    color: #848789;\\n    line-height: 3rem;\\n    padding: 0 50px 100px 50px; }\\n    .work-section-box-article p::after {\\n      content: '';\\n      position: absolute;\\n      text-align: center;\\n      left: 48%;\\n      bottom: -10px;\\n      width: 20px;\\n      height: 20px;\\n      background: #FFFFFF;\\n      transform: rotate(45deg); }\\n\\n.work-section-box-article-bg {\\n  width: 100%; }\\n\\n@media (min-width: 900px) {\\n  .work-section-box {\\n    flex-direction: row; }\\n  .work-section-box-first-bg {\\n    width: 70%;\\n    height: auto; }\\n  .work-section-box-second-bg {\\n    width: 70%;\\n    height: auto; }\\n  .work-section-box-article {\\n    width: 30%; }\\n    .work-section-box-article p {\\n      text-align: justify; }\\n  .work-section-box-article-down {\\n    width: 40%; }\\n  .work-section-box-third-left-bg {\\n    width: 30%;\\n    height: auto; }\\n  .work-section-box-third-right-bg {\\n    width: 30%;\\n    height: auto; } }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./scss/partials/_workSection.scss?./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -160,7 +171,18 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../scss/partials/_main.scss */ \"./scss/partials/_main.scss\");\n__webpack_require__(/*! ../scss/partials/_header.scss */ \"./scss/partials/_header.scss\");\n__webpack_require__(/*! ../scss/partials/_titleSection.scss */ \"./scss/partials/_titleSection.scss\");\n\ndocument.addEventListener('DOMContentLoaded', () => {});\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("\n\n__webpack_require__(/*! ../scss/partials/_main.scss */ \"./scss/partials/_main.scss\");\n__webpack_require__(/*! ../scss/partials/_header.scss */ \"./scss/partials/_header.scss\");\n__webpack_require__(/*! ../scss/partials/_aboutUsSection.scss */ \"./scss/partials/_aboutUsSection.scss\");\n__webpack_require__(/*! ../scss/partials/_workSection.scss */ \"./scss/partials/_workSection.scss\");\n\ndocument.addEventListener('DOMContentLoaded', () => {});\n\n//# sourceURL=webpack:///./scripts/app.js?");
+
+/***/ }),
+
+/***/ "./scss/partials/_aboutUsSection.scss":
+/*!********************************************!*\
+  !*** ./scss/partials/_aboutUsSection.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url=false!../../node_modules/sass-loader/lib/loader.js!./_aboutUsSection.scss */ \"./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_aboutUsSection.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./scss/partials/_aboutUsSection.scss?");
 
 /***/ }),
 
@@ -186,14 +208,14 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url
 
 /***/ }),
 
-/***/ "./scss/partials/_titleSection.scss":
-/*!******************************************!*\
-  !*** ./scss/partials/_titleSection.scss ***!
-  \******************************************/
+/***/ "./scss/partials/_workSection.scss":
+/*!*****************************************!*\
+  !*** ./scss/partials/_workSection.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url=false!../../node_modules/sass-loader/lib/loader.js!./_titleSection.scss */ \"./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_titleSection.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./scss/partials/_titleSection.scss?");
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url=false!../../node_modules/sass-loader/lib/loader.js!./_workSection.scss */ \"./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_workSection.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./scss/partials/_workSection.scss?");
 
 /***/ })
 
