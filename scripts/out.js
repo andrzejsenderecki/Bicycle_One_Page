@@ -119,6 +119,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_sliderSection.scss":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_sliderSection.scss ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".slider-section-container {\\n  width: 100%;\\n  background: #f7f7f7;\\n  padding: 70px 0 70px 0;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center; }\\n\\n.slider-section {\\n  display: flex;\\n  justify-content: center;\\n  width: 100%;\\n  max-width: 1200px;\\n  transition: 0.5s; }\\n\\n.slide-main-position {\\n  position: relative; }\\n\\n.slide-position {\\n  position: absolute; }\\n\\n.slider-section-box {\\n  width: 100%;\\n  max-width: 800px;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 0 10px 40px 10px; }\\n  .slider-section-box h2 {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 2.5rem;\\n    color: #4d4959;\\n    text-align: center;\\n    padding: 20px 0 20px 0; }\\n  .slider-section-box p {\\n    font-family: 'Lato', sans-serif;\\n    font-size: 2.3rem;\\n    color: #848789;\\n    font-style: italic;\\n    text-align: center;\\n    line-height: 3rem; }\\n\\n.slider-section-nav {\\n  width: 100%;\\n  max-width: 1200px;\\n  display: flex;\\n  justify-content: center; }\\n  .slider-section-nav div {\\n    width: 25px;\\n    height: 25px;\\n    border: 1px solid #a9afb3;\\n    border-radius: 50px;\\n    margin: 20px; }\\n\\n.slide-invisible {\\n  visibility: hidden;\\n  opacity: 0;\\n  transition: 0.5s all;\\n  transform: translateY(-100px); }\\n\\n.slide-visible {\\n  display: flex;\\n  opacity: 1;\\n  transition: 0.5s all; }\\n\\n@media (min-width: 900px) {\\n  .slider-section-nav div {\\n    width: 15px;\\n    height: 15px;\\n    border: 1px solid #a9afb3;\\n    border-radius: 10px;\\n    margin: 10px;\\n    transition: 0.3s; }\\n    .slider-section-nav div:hover {\\n      cursor: pointer;\\n      background: #a9afb3; } }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./scss/partials/_sliderSection.scss?./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_workSection.scss":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/css-loader?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_workSection.scss ***!
@@ -171,7 +182,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../scss/partials/_main.scss */ \"./scss/partials/_main.scss\");\n__webpack_require__(/*! ../scss/partials/_header.scss */ \"./scss/partials/_header.scss\");\n__webpack_require__(/*! ../scss/partials/_aboutUsSection.scss */ \"./scss/partials/_aboutUsSection.scss\");\n__webpack_require__(/*! ../scss/partials/_workSection.scss */ \"./scss/partials/_workSection.scss\");\n\ndocument.addEventListener('DOMContentLoaded', () => {\n\n    let $aboutLink = $('#about');\n    let $workLink = $('#work');\n    let $shop = $('#shop');\n    let $contact = $('#contact');\n\n    let $headerSection = $('.header-contaner');\n    let $aboutSection = $('.about-section-container');\n    let $workSection = $('.work-section-container');\n\n    $aboutLink.on('click', event => {\n        event.preventDefault();\n        $('html').animate({\n            scrollTop: $aboutSection.offset().top\n        }, 1000);\n    });\n\n    $workLink.on('click', event => {\n        event.preventDefault();\n        $('html').animate({\n            scrollTop: $workSection.offset().top\n        }, 1000);\n    });\n});\n\n//# sourceURL=webpack:///./scripts/app.js?");
+eval("\n\n__webpack_require__(/*! ../scss/partials/_main.scss */ \"./scss/partials/_main.scss\");\n__webpack_require__(/*! ../scss/partials/_header.scss */ \"./scss/partials/_header.scss\");\n__webpack_require__(/*! ../scss/partials/_aboutUsSection.scss */ \"./scss/partials/_aboutUsSection.scss\");\n__webpack_require__(/*! ../scss/partials/_workSection.scss */ \"./scss/partials/_workSection.scss\");\n__webpack_require__(/*! ../scss/partials/_sliderSection.scss */ \"./scss/partials/_sliderSection.scss\");\n\ndocument.addEventListener('DOMContentLoaded', () => {\n\n    // Slider\n\n    const sliderSectionBtn = document.querySelectorAll('.slider-section-nav div');\n    const sliderSectionSlide = document.querySelectorAll('.slider-section div');\n\n    for (let i = 0; i < sliderSectionBtn.length; i++) {\n        sliderSectionBtn[i].addEventListener('click', () => {\n            for (let j = 0; j < sliderSectionBtn.length; j++) {\n                if (i === j) {\n                    sliderSectionSlide[j].classList.add('slide-visible');\n                    sliderSectionSlide[j].classList.remove('slide-invisible');\n                } else {\n                    sliderSectionSlide[j].classList.remove('slide-visible');\n                    sliderSectionSlide[j].classList.add('slide-invisible');\n                }\n            }\n        });\n    }\n\n    // jQuery\n\n    const $aboutLink = $('#about');\n    const $workLink = $('#work');\n    const $shop = $('#shop');\n    const $contact = $('#contact');\n\n    const $headerSection = $('.header-contaner');\n    const $aboutSection = $('.about-section-container');\n    const $workSection = $('.work-section-container');\n\n    $aboutLink.on('click', event => {\n        event.preventDefault();\n        $('html').animate({\n            scrollTop: $aboutSection.offset().top\n        }, 1000);\n    });\n\n    $workLink.on('click', event => {\n        event.preventDefault();\n        $('html').animate({\n            scrollTop: $workSection.offset().top\n        }, 1000);\n    });\n});\n\n//# sourceURL=webpack:///./scripts/app.js?");
 
 /***/ }),
 
@@ -205,6 +216,17 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url=false!../../node_modules/sass-loader/lib/loader.js!./_main.scss */ \"./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_main.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./scss/partials/_main.scss?");
+
+/***/ }),
+
+/***/ "./scss/partials/_sliderSection.scss":
+/*!*******************************************!*\
+  !*** ./scss/partials/_sliderSection.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader?url=false!../../node_modules/sass-loader/lib/loader.js!./_sliderSection.scss */ \"./node_modules/css-loader/index.js?url=false!./node_modules/sass-loader/lib/loader.js!./scss/partials/_sliderSection.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./scss/partials/_sliderSection.scss?");
 
 /***/ }),
 
