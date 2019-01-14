@@ -3,6 +3,7 @@ require('../scss/partials/_header.scss');
 require('../scss/partials/_aboutUsSection.scss');
 require('../scss/partials/_workSection.scss');
 require('../scss/partials/_sliderSection.scss');
+require('../scss/partials/_shopSection.scss');
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -29,12 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const $aboutLink = $('#about');
     const $workLink = $('#work');
-    const $shop = $('#shop');
-    const $contact = $('#contact');
+    const $shopLink = $('#shop');
+    const $contactLink = $('#contact');
 
     const $headerSection = $('.header-contaner');
     const $aboutSection = $('.about-section-container');
     const $workSection = $('.work-section-container');
+    const $shopSection = $('.shop-section-container');
 
     $aboutLink.on('click', (event) => {
         event.preventDefault();
@@ -48,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         $('html').animate({
             scrollTop: $workSection.offset().top
         }, 1000);
+    });
+
+    $shopLink.on('click', (event) => {
+        event.preventDefault();
+        $('html').animate({
+            scrollTop: $shopSection.offset().top
+        }, 1500);
     });
 
 });
