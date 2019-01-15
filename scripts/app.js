@@ -4,6 +4,7 @@ require('../scss/partials/_aboutUsSection.scss');
 require('../scss/partials/_workSection.scss');
 require('../scss/partials/_sliderSection.scss');
 require('../scss/partials/_shopSection.scss');
+require('../scss/partials/_footer.scss');
 
 document.addEventListener('DOMContentLoaded', () => {
 
